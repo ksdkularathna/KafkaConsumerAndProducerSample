@@ -3,14 +3,15 @@
  * @created 09/08/2018
  */
 
-import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.common.serialization.LongDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
 import java.util.Collections;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Properties;
 
 public class KafkaConsumer

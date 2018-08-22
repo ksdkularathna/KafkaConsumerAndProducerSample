@@ -29,7 +29,7 @@ public class KafkaProducer
   }
 
   public static void runProducerSync(final int sendMessageCount)
-  {
+  { 
     final Producer<Long, String> producer = createProducer();
     long time = System.currentTimeMillis();
 
